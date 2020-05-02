@@ -1,0 +1,15 @@
+1. Replace VGG16 feature extractor to Mobilenet_v2:
+                Mobilenet_v2        VGG11
+    Accuracy:   ~72%                ~71%
+    Complexity: <1 G-FLOPs          >7 G-FLOPs
+
+2. Check quality of result model
+
+3. Clip feature extractor to increase spatial resolution on output feature map.
+    Estimate computational complexity between src model as and clipped model O(Classes)
+
+5. Increase resolution of input tensor to increase spatial resolution
+
+4. Retrain detector for less count of object classes (<5) to prove correctness of solution and compare
+    to baseline (SSD TF OD API and YOLO Darknet)
+

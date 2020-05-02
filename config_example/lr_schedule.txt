@@ -1,0 +1,5 @@
+value_start     value_stop      type        duration       unit_of_duration
+1e-3            1e-2            linear      10             epochs
+1e-2            1e-2            const       75             epochs
+1e-2            1e-3            linear      30             epochs
+1e-3            1e-4            linear      30             epochs
